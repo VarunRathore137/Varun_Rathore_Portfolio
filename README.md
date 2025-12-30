@@ -1,4 +1,4 @@
-#Varun Rathore| Portfolio
+# Varun Rathore | Portfolio
 
 ## 🚀 Welcome to my Portfolio!
 
