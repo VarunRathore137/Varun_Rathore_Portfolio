@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -110,8 +111,15 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0px) rotateX(-15deg) rotateY(20deg); }
-            50% { transform: translateY(-3px) rotateX(-15deg) rotateY(20deg); }
+
+            0%,
+            100% {
+                transform: translateY(0px) rotateX(-15deg) rotateY(20deg);
+            }
+
+            50% {
+                transform: translateY(-3px) rotateX(-15deg) rotateY(20deg);
+            }
         }
 
         /* Bloch sphere circle */
@@ -311,7 +319,7 @@
             font-size: 5rem;
             position: relative;
             animation: hero-glow 3s ease-in-out infinite;
-            box-shadow: 
+            box-shadow:
                 0 0 60px rgba(168, 85, 247, 0.6),
                 0 0 100px rgba(139, 92, 246, 0.4),
                 0 0 140px rgba(236, 72, 153, 0.2);
@@ -321,21 +329,24 @@
 
         .profile-photo-hero:hover {
             transform: scale(1.08);
-            box-shadow: 
+            box-shadow:
                 0 0 80px rgba(168, 85, 247, 0.8),
                 0 0 120px rgba(139, 92, 246, 0.6),
                 0 0 160px rgba(236, 72, 153, 0.4);
         }
 
         @keyframes hero-glow {
-            0%, 100% {
-                box-shadow: 
+
+            0%,
+            100% {
+                box-shadow:
                     0 0 60px rgba(168, 85, 247, 0.6),
                     0 0 100px rgba(139, 92, 246, 0.4),
                     0 0 140px rgba(236, 72, 153, 0.2);
             }
+
             50% {
-                box-shadow: 
+                box-shadow:
                     0 0 80px rgba(168, 85, 247, 0.8),
                     0 0 120px rgba(139, 92, 246, 0.6),
                     0 0 160px rgba(236, 72, 153, 0.4);
@@ -524,8 +535,13 @@
         }
 
         @keyframes carousel-rotate-skills {
-            from { transform: rotateY(0deg); }
-            to { transform: rotateY(360deg); }
+            from {
+                transform: rotateY(0deg);
+            }
+
+            to {
+                transform: rotateY(360deg);
+            }
         }
 
         .skill-item-3d {
@@ -619,7 +635,7 @@
             border-radius: 2rem;
             padding: 2.5rem;
             overflow-y: auto;
-            box-shadow: 
+            box-shadow:
                 0 0 80px rgba(168, 85, 247, 0.2),
                 inset 0 0 80px rgba(168, 85, 247, 0.05);
         }
@@ -879,8 +895,13 @@
         }
 
         @keyframes holographic-shine {
-            0% { transform: translateX(-100%) rotate(45deg); }
-            100% { transform: translateX(100%) rotate(45deg); }
+            0% {
+                transform: translateX(-100%) rotate(45deg);
+            }
+
+            100% {
+                transform: translateX(100%) rotate(45deg);
+            }
         }
 
         .glass-card:hover {
@@ -1122,8 +1143,13 @@
         }
 
         @keyframes carousel-rotate {
-            from { transform: rotateY(0deg); }
-            to { transform: rotateY(360deg); }
+            from {
+                transform: rotateY(0deg);
+            }
+
+            to {
+                transform: rotateY(360deg);
+            }
         }
 
         .carousel-item {
@@ -1246,8 +1272,15 @@
         }
 
         @keyframes fade-in {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .contact-item {
@@ -1485,6 +1518,7 @@
         }
     </style>
 </head>
+
 <body>
     <canvas id="interferenceCanvas"></canvas>
     <canvas id="entanglementCanvas"></canvas>
@@ -1520,44 +1554,52 @@
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
         <div class="hero-content">
-            <div class="profile-photo-hero" style="background-image: url('images/profile_photo2.png'); background-size: cover;"></div> 
-            
+            <div class="profile-photo-hero"
+                style="background-image: url('images/profile_photo2.png'); background-size: cover;"></div>
+
             <h1 class="hero-name">Varun Rathore</h1>
             <p class="hero-title">Software Engineer | AI/ML Developer | Quantum Computing Specialist</p>
             <p class="hero-description">
-                Final-year B.Tech (CSE) student with expertise in backend development, AI/ML systems, data engineering, 
-                and quantum computing. Proficient in Python, FastAPI, SQL, Qiskit, and cloud technologies. Top 10 in MIT's 
+                Final-year B.Tech (CSE) student with expertise in backend development, AI/ML systems, data engineering,
+                and quantum computing. Proficient in Python, FastAPI, SQL, Qiskit, and cloud technologies. Top 10 in
+                MIT's
                 hackathon with proven track record in building scalable applications and research prototypes.
             </p>
-            
+
             <!-- Social Links -->
             <div class="hero-social">
-                <a href="https://www.linkedin.com/in/varun-rathore137/" target="_blank" class="social-icon" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/varun-rathore137/" target="_blank" class="social-icon"
+                    title="LinkedIn">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                     </svg>
                 </a>
                 <a href="https://github.com/VarunRathore137" target="_blank" class="social-icon" title="GitHub">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                     </svg>
                 </a>
                 <a href="mailto:varunrathoreonwork@gmail.com" class="social-icon" title="Email">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+                        <path
+                            d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
                     </svg>
                 </a>
             </div>
-            
+
             <div class="hero-cta">
                 <a href="#projects" class="cta-button cta-primary">View Projects</a>
                 <a href="#contact" class="cta-button cta-secondary">Get in Touch</a>
             </div>
             <div style="margin-top: 1rem;">
-                <a href="https://drive.google.com/file/d/12Qhz098ytXFUN2E1tI-YcFFZjuR3hGLZ/view?usp=sharing" class="cta-button cta-secondary" download>Download CV</a>
+                <a href="https://drive.google.com/file/d/12Qhz098ytXFUN2E1tI-YcFFZjuR3hGLZ/view?usp=sharing"
+                    class="cta-button cta-secondary" download>Download CV</a>
             </div>
             <div style="margin-top: 1rem;">
-                <a href="https://drive.google.com/file/d/1EMTFHffMwkRfIgsoWsegxihL-_fnWTUw/view?usp=sharing" class="cta-button cta-secondary" download>Download Resume</a>
+                <a href="https://drive.google.com/file/d/1EMTFHffMwkRfIgsoWsegxihL-_fnWTUw/view?usp=sharing"
+                    class="cta-button cta-secondary" download>Download Resume</a>
             </div>
         </div>
     </section>
@@ -1568,25 +1610,34 @@
         <section id="about" class="section">
             <div class="section-header">
                 <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Building innovative solutions at the intersection of AI, quantum, and software engineering</p>
+                <p class="section-subtitle">Building innovative solutions at the intersection of AI, quantum, and
+                    software engineering</p>
             </div>
             <div style="max-width: 900px; margin: 0 auto;">
                 <p style="font-size: 1.0625rem; line-height: 1.8; color: #cbd5e1; margin-bottom: 1.5rem;">
-                    I'm a final-year B.Tech (CSE) student at Mahakal Institute of Technology and Management, Ujjain, 
-                    with diverse expertise spanning software development, AI/ML, and quantum computing. I build production-ready 
-                    applications using Python, FastAPI, SQL, and modern development frameworks, while also conducting cutting-edge 
+                    I'm a final-year B.Tech (CSE) student at Mahakal Institute of Technology and Management, Ujjain,
+                    with diverse expertise spanning software development, AI/ML, and quantum computing. I build
+                    production-ready
+                    applications using Python, FastAPI, SQL, and modern development frameworks, while also conducting
+                    cutting-edge
                     research in quantum algorithms and AI-powered systems.
                 </p>
                 <p style="font-size: 1.0625rem; line-height: 1.8; color: #cbd5e1; margin-bottom: 1.5rem;">
-                    My experience includes developing REST APIs with 20+ SQL queries, creating AI systems achieving 95% accuracy, 
-                    and implementing quantum algorithms with 85% faster convergence at QRACE (NIT Delhi). I've secured Top 10 
-                    placement in MIT's hackathon, led teams to successful deployments, and contributed to academic research with 
+                    My experience includes developing REST APIs with 20+ SQL queries, creating AI systems achieving 95%
+                    accuracy,
+                    and implementing quantum algorithms with 85% faster convergence at QRACE (NIT Delhi). I've secured
+                    Top 10
+                    placement in MIT's hackathon, led teams to successful deployments, and contributed to academic
+                    research with
                     a pre-published paper on Graphene Quantum Dots.
                 </p>
                 <p style="font-size: 1.0625rem; line-height: 1.8; color: #cbd5e1;">
-                    I'm passionate about leveraging emerging technologies—from quantum computing to AI—to solve real-world problems. 
-                    Whether it's optimizing backend architectures, training machine learning models, or simulating quantum circuits, 
-                    I bring a unique blend of theoretical knowledge and practical implementation skills to every project.
+                    I'm passionate about leveraging emerging technologies—from quantum computing to AI—to solve
+                    real-world problems.
+                    Whether it's optimizing backend architectures, training machine learning models, or simulating
+                    quantum circuits,
+                    I bring a unique blend of theoretical knowledge and practical implementation skills to every
+                    project.
                 </p>
             </div>
         </section>
@@ -1595,7 +1646,8 @@
         <section id="skills" class="section">
             <div class="section-header">
                 <h2 class="section-title">Technical Expertise</h2>
-                <p class="section-subtitle">Click any skill to lock quantum entanglement and see projects related to it</p>
+                <p class="section-subtitle">Click any skill to lock quantum entanglement and see projects related to it
+                </p>
             </div>
 
             <!-- Technical Skills -->
@@ -1626,15 +1678,18 @@
                 <h2 class="section-title">Featured Projects</h2>
                 <p class="section-subtitle">Full-stack applications, AI/ML systems, and quantum simulations</p>
             </div>
-            
+
             <!-- Quantum Projects -->
             <div class="subsection">
                 <h3 class="subsection-title">Quantum Computing & Simulation</h3>
                 <div class="projects-grid">
                     <div class="glass-card" data-project-id="project-teleportation">
-                        <div class="card-image" style="background-image: url('images/quantum-teleportation.png'); background-size: cover; background-position: center;"></div>
+                        <div class="card-image"
+                            style="background-image: url('images/quantum-teleportation.png'); background-size: cover; background-position: center;">
+                        </div>
                         <h3 class="card-title">Quantum Teleportation Experiment</h3>
-                        <p class="card-description">Interactive Qiskit-integrated visualization system with AI-powered quantum agent and voice assistant for learning quantum teleportation.</p>
+                        <p class="card-description">Interactive Qiskit-integrated visualization system with AI-powered
+                            quantum agent and voice assistant for learning quantum teleportation.</p>
                         <div class="card-tags">
                             <span class="tag">Qiskit</span>
                             <span class="tag">AI Agent</span>
@@ -1643,9 +1698,12 @@
                     </div>
 
                     <div class="glass-card" data-project-id="project-quantumai">
-                        <div class="card-image" style="background-image: url('images/quantum-ai.png'); background-size: cover; background-position: center;"></div>
+                        <div class="card-image"
+                            style="background-image: url('images/quantum-ai.png'); background-size: cover; background-position: center;">
+                        </div>
                         <h3 class="card-title">QUANTUMAI-VERSE</h3>
-                        <p class="card-description">AI-powered 3D simulation environment for visualizing Quantum Data Structures and Algorithms with conversational Q-AI agent.</p>
+                        <p class="card-description">AI-powered 3D simulation environment for visualizing Quantum Data
+                            Structures and Algorithms with conversational Q-AI agent.</p>
                         <div class="card-tags">
                             <span class="tag">3D Simulation</span>
                             <span class="tag">QDSA</span>
@@ -1654,9 +1712,12 @@
                     </div>
 
                     <div class="glass-card" data-project-id="project-qbho">
-                        <div class="card-image" style="background-image: url('images/QBHO.png'); background-size: cover; background-position: center;"></div>
+                        <div class="card-image"
+                            style="background-image: url('images/QBHO.png'); background-size: cover; background-position: center;">
+                        </div>
                         <h3 class="card-title">Quantum Binary Hole Optimization</h3>
-                        <p class="card-description">Research implementation achieving 85% faster convergence on Maritime Transportation Data optimization problems.</p>
+                        <p class="card-description">Research implementation achieving 85% faster convergence on Maritime
+                            Transportation Data optimization problems.</p>
                         <div class="card-tags">
                             <span class="tag">QBHO</span>
                             <span class="tag">QAOA</span>
@@ -1665,9 +1726,13 @@
                     </div>
 
                     <div class="glass-card" data-project-id="project-quantumstudio">
-                        <div class="card-image" style="background-image: url('images/quantum_studio.png'); background-size: cover; background-position: center;"></div>
+                        <div class="card-image"
+                            style="background-image: url('images/quantum_studio.png'); background-size: cover; background-position: center;">
+                        </div>
                         <h3 class="card-title">QUANTUM STUDIO</h3>
-                        <p class="card-description">Quantum Programming Studio is an interactive web-based tool for designing and simulating quantum circuits. Built with React and TypeScript, it offers a drag-and-drop interface to construct quantum algorithms visually.</p>
+                        <p class="card-description">Quantum Programming Studio is an interactive web-based tool for
+                            designing and simulating quantum circuits. Built with React and TypeScript, it offers a
+                            drag-and-drop interface to construct quantum algorithms visually.</p>
                         <div class="card-tags">
                             <span class="tag">Quantum Programming</span>
                             <span class="tag">React</span>
@@ -1684,9 +1749,12 @@
                 <h3 class="subsection-title">AI/ML & Backend Development</h3>
                 <div class="projects-grid">
                     <div class="glass-card" data-project-id="project-darktrace">
-                        <div class="card-image" style="background-image: url('images/dark_trace.png'); background-size: cover; background-position: center;"></div>
+                        <div class="card-image"
+                            style="background-image: url('images/dark_trace.png'); background-size: cover; background-position: center;">
+                        </div>
                         <h3 class="card-title">DARK TRACE AI</h3>
-                        <p class="card-description">Top 10 Hackathon - AI Drug Crime Detection System achieving 95% accuracy on 30,000+ text records with real-time deployment.</p>
+                        <p class="card-description">Top 10 Hackathon - AI Drug Crime Detection System achieving 95%
+                            accuracy on 30,000+ text records with real-time deployment.</p>
                         <div class="card-tags">
                             <span class="tag">Python</span>
                             <span class="tag">NLP</span>
@@ -1695,9 +1763,12 @@
                     </div>
 
                     <div class="glass-card" data-project-id="project-inventory">
-                        <div class="card-image" style="background-image: url('images/inventory_management.png'); background-size: cover; background-position: center;"></div>
+                        <div class="card-image"
+                            style="background-image: url('images/inventory_management.png'); background-size: cover; background-position: center;">
+                        </div>
                         <h3 class="card-title">Inventory Management System</h3>
-                        <p class="card-description">Full-stack REST API with FastAPI, SQLite, 20+ SQL queries, comprehensive testing, and OpenAPI documentation.</p>
+                        <p class="card-description">Full-stack REST API with FastAPI, SQLite, 20+ SQL queries,
+                            comprehensive testing, and OpenAPI documentation.</p>
                         <div class="card-tags">
                             <span class="tag">FastAPI</span>
                             <span class="tag">SQL</span>
@@ -1706,9 +1777,13 @@
                     </div>
 
                     <div class="glass-card" data-project-id="project-tripbot">
-                        <div class="card-image" style="background-image: url('images/tripbot_ai.jpg'); background-size: cover; background-position: center;"></div>
+                        <div class="card-image"
+                            style="background-image: url('images/tripbot_ai.jpg'); background-size: cover; background-position: center;">
+                        </div>
                         <h3 class="card-title">TripBot-India - AI Trip Planner</h3>
-                        <p class="card-description">An AI-powered travel itinerary generator focused exclusively on Indian destinations. Create personalized, detailed travel plans with the ability to fully customize every aspect of your journey.</p>
+                        <p class="card-description">An AI-powered travel itinerary generator focused exclusively on
+                            Indian destinations. Create personalized, detailed travel plans with the ability to fully
+                            customize every aspect of your journey.</p>
                         <div class="card-tags">
                             <span class="tag">OpenAI API</span>
                             <span class="tag">Maps API</span>
@@ -1717,9 +1792,13 @@
                     </div>
 
                     <div class="glass-card" data-project-id="project-fakenews">
-                        <div class="card-image" style="background-image: url('images/fake_news.png'); background-size: cover; background-position: center;"></div>
+                        <div class="card-image"
+                            style="background-image: url('images/fake_news.png'); background-size: cover; background-position: center;">
+                        </div>
                         <h3 class="card-title">Fake News Prediction Model</h3>
-                        <p class="card-description">Fake News Prediction Model provides a robust, production-ready solution for detecting fake news using advanced Natural Language Processing (NLP) and Machine Learning techniques.</p>
+                        <p class="card-description">Fake News Prediction Model provides a robust, production-ready
+                            solution for detecting fake news using advanced Natural Language Processing (NLP) and
+                            Machine Learning techniques.</p>
                         <div class="card-tags">
                             <span class="tag">Python</span>
                             <span class="tag">NLP</span>
@@ -1730,9 +1809,13 @@
                     </div>
 
                     <div class="glass-card" data-project-id="project-portfolio">
-                        <div class="card-image" style="background-image: url('images/Dr.Mohit.png'); background-size: cover; background-position: center;"></div>
+                        <div class="card-image"
+                            style="background-image: url('images/Dr.Mohit.png'); background-size: cover; background-position: center;">
+                        </div>
                         <h3 class="card-title">Dr. Mohit Rathore - Professional Portfolio</h3>
-                        <p class="card-description">This portfolio website serves as a comprehensive digital presence for Dr. Mohit Rathore, providing patients and colleagues with easy access to professional information, qualifications, services, and contact details.</p>
+                        <p class="card-description">This portfolio website serves as a comprehensive digital presence
+                            for Dr. Mohit Rathore, providing patients and colleagues with easy access to professional
+                            information, qualifications, services, and contact details.</p>
                         <div class="card-tags">
                             <span class="tag">TypeScript</span>
                             <span class="tag">EmailJS</span>
@@ -1752,7 +1835,8 @@
 
             <div class="publications-list">
                 <div class="publication-item" data-paper-id="pub-1">
-                    <h3 class="publication-title">Realization of Graphene Quantum Dots for Innovative Biosensor Development and Diverse Applications</h3>
+                    <h3 class="publication-title">Realization of Graphene Quantum Dots for Innovative Biosensor
+                        Development and Diverse Applications</h3>
                     <p class="publication-authors">Varun Rathore, Dr. Kumar Gautam</p>
                     <p class="publication-venue">Pre-published, Under Peer Review (2025)</p>
                     <div class="publication-links">
@@ -1776,18 +1860,25 @@
                         <div class="timeline-title">Quantum Algorithm Researcher</div>
                         <div class="timeline-company">QRACE - Quantum Research And Center of Excellence, NIT Delhi</div>
                         <p class="timeline-description">
-                            Implemented Quantum-inspired Binary Hole Optimization (QBHO) algorithm achieving ~85% faster convergence. 
-                            Developed and benchmarked 5+ variational quantum circuits in Qiskit. Co-authored research paper on Graphene Quantum Dots.
+                            Implemented Quantum-inspired Binary Hole Optimization (QBHO) algorithm achieving ~85% faster
+                            convergence.
+                            Developed and benchmarked 5+ variational quantum circuits in Qiskit. Co-authored research
+                            paper on Graphene Quantum Dots.
                         </p>
                     </div>
                     <div class="timeline-marker"></div>
                     <div class="experience-detail-card">
-                        <div class="experience-detail-image" style="background-image: url('images/WhatsApp Image 2025-08-07 at 01.23.09_708b3272.jpg'); background-size: cover; background-position: center;"></div>
+                        <div class="experience-detail-image"
+                            style="background-image: url('images/WhatsApp Image 2025-08-07 at 01.23.09_708b3272.jpg'); background-size: cover; background-position: center;">
+                        </div>
                         <h4 class="experience-detail-title">Research Highlights</h4>
                         <p class="experience-detail-text">
-                            Developed quantum-inspired optimization algorithms for Maritime Transportation Data. Benchmarked 
-                            performance against classical solvers with significant speedups. Collaborated with research mentors 
-                            to translate theoretical papers into practical prototypes. Delivered technical presentations to 
+                            Developed quantum-inspired optimization algorithms for Maritime Transportation Data.
+                            Benchmarked
+                            performance against classical solvers with significant speedups. Collaborated with research
+                            mentors
+                            to translate theoretical papers into practical prototypes. Delivered technical presentations
+                            to
                             cross-functional teams enhancing project communication.
                         </p>
                     </div>
@@ -1799,17 +1890,22 @@
                         <div class="timeline-title">Mass Spectrometry Job Simulation</div>
                         <div class="timeline-company">Thermo Fisher Scientific (Remote)</div>
                         <p class="timeline-description">
-                            Completed virtual research internship applying mass spectrometry techniques. Built data-driven 
+                            Completed virtual research internship applying mass spectrometry techniques. Built
+                            data-driven
                             visualization dashboards using Python, NumPy, Pandas, Matplotlib, and Power BI.
                         </p>
                     </div>
                     <div class="timeline-marker"></div>
                     <div class="experience-detail-card">
-                        <div class="experience-detail-image" style="background-image: url('images/Screenshot 2025-12-31 005659.png'); background-size: cover; background-position: center;"></div>
+                        <div class="experience-detail-image"
+                            style="background-image: url('images/Screenshot 2025-12-31 005659.png'); background-size: cover; background-position: center;">
+                        </div>
                         <h4 class="experience-detail-title">Technical Skills Development</h4>
                         <p class="experience-detail-text">
-                            Applied mass-to-charge (m/z) analysis for unknown compound identification. Improved signal-to-noise 
-                            clarity through data preprocessing, baseline correction, and noise-reduction pipelines. Enhanced 
+                            Applied mass-to-charge (m/z) analysis for unknown compound identification. Improved
+                            signal-to-noise
+                            clarity through data preprocessing, baseline correction, and noise-reduction pipelines.
+                            Enhanced
                             feature extraction accuracy for chromatographic signal interpretation.
                         </p>
                     </div>
@@ -1821,17 +1917,21 @@
                         <div class="timeline-title">B.Tech Computer Science & Engineering</div>
                         <div class="timeline-company">Mahakal Institute of Technology and Management, Ujjain</div>
                         <p class="timeline-description">
-                            Ranked among top 10 students in CSE department. Core member of campus R&D initiatives. 
+                            Ranked among top 10 students in CSE department. Core member of campus R&D initiatives.
                             Independently pursuing advanced Quantum Computing and Quantum Physics alongside coursework.
                         </p>
                     </div>
                     <div class="timeline-marker"></div>
                     <div class="experience-detail-card">
-                        <div class="experience-detail-image" style="background-image: url('images/1000137363.jpg'); background-size: cover; background-position: center;"></div>
+                        <div class="experience-detail-image"
+                            style="background-image: url('images/1000137363.jpg'); background-size: cover; background-position: center;">
+                        </div>
                         <h4 class="experience-detail-title">Academic Journey</h4>
                         <p class="experience-detail-text">
-                            Maintaining CGPA of 8.2/10 with focused coursework in quantum computing, algorithms, and data structures. 
-                            Active participation in research clubs, hackathons, and technical communities. Completed multiple 
+                            Maintaining CGPA of 8.2/10 with focused coursework in quantum computing, algorithms, and
+                            data structures.
+                            Active participation in research clubs, hackathons, and technical communities. Completed
+                            multiple
                             advanced quantum computing courses from MIT OCW, edX, and IBM Learning.
                         </p>
                     </div>
@@ -1871,7 +1971,8 @@
                     <div class="draggable-gate" id="hadamardGate">H</div>
 
                     <div class="contact-revealed" id="contactRevealed">
-                        <h3 style="margin-bottom: 1.5rem; color: #a855f7; text-align: center;">Contact Information Unlocked! 🎉</h3>
+                        <h3 style="margin-bottom: 1.5rem; color: #a855f7; text-align: center;">Contact Information
+                            Unlocked! 🎉</h3>
                         <div class="contact-item">
                             <span class="contact-icon">📧</span>
                             <span>varunrathoreonwork@gmail.com</span>
@@ -1892,7 +1993,7 @@
                             <span class="contact-icon">📍</span>
                             <span>Ujjain, Madhya Pradesh, India</span>
                         </div>
-                        
+
                         <!-- Send Message Section -->
                         <div class="send-message-section">
                             <h4 style="font-size: 1.25rem; color: #d946ef; margin: 2rem 0 1rem;">📨 Send a Message</h4>
@@ -1904,13 +2005,14 @@
                             </form>
                         </div>
                     </div>
-                    
+
                     <!-- Current Status -->
                     <div class="status-section">
                         <h4 style="font-size: 1.25rem; color: #d946ef; margin: 2rem 0 1rem;">Current Status</h4>
                         <div class="status-item">
                             <span style="font-size: 1.5rem;">🟢</span>
-                            <span style="margin-left: 0.75rem;">Available for SDE, AI/ML, Data Engineer, and Quantum Computing jobs and internships (Summer 2026)</span>
+                            <span style="margin-left: 0.75rem;">Available for SDE, AI/ML, Data Engineer, and Quantum
+                                Computing jobs and internships (Summer 2026)</span>
                         </div>
                         <div class="status-item" style="margin-top: 0.75rem;">
                             <span style="font-size: 1.5rem;">🎓</span>
@@ -1918,10 +2020,11 @@
                         </div>
                         <div class="status-item" style="margin-top: 0.75rem;">
                             <span style="font-size: 1.5rem;">💼</span>
-                            <span style="margin-left: 0.75rem;">Open to: Backend Dev, Full-Stack, AI/ML Engineer, Quantum Developer roles</span>
+                            <span style="margin-left: 0.75rem;">Open to: Backend Dev, Full-Stack, AI/ML Engineer,
+                                Quantum Developer roles</span>
                         </div>
                     </div>
-                    
+
                     <!-- Quick Links -->
                     <div class="quick-links-section">
                         <h4 style="font-size: 1.25rem; color: #d946ef; margin: 2rem 0 1rem;">Quick Links</h4>
@@ -1934,7 +2037,7 @@
                             <a href="#speaking" class="quick-link">Achievements</a>
                         </div>
                     </div>
-                    
+
                     <!-- Key Highlights -->
                     <div class="highlights-section">
                         <h4 style="font-size: 1.25rem; color: #d946ef; margin: 2rem 0 1rem;">Key Highlights</h4>
@@ -1957,13 +2060,16 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Closing Line -->
                     <div class="closing-section">
                         <p style="text-align: center; color: #cbd5e1; line-height: 1.8; font-size: 0.9375rem;">
-                            This portfolio showcases my journey as a software engineer, AI/ML developer, and quantum computing enthusiast. 
-                            From backend systems to machine learning models to quantum simulations—I love building innovative solutions. 
-                            Feel free to reach out for internship opportunities, collaborations, or technical discussions!
+                            This portfolio showcases my journey as a software engineer, AI/ML developer, and quantum
+                            computing enthusiast.
+                            From backend systems to machine learning models to quantum simulations—I love building
+                            innovative solutions.
+                            Feel free to reach out for internship opportunities, collaborations, or technical
+                            discussions!
                         </p>
                     </div>
                 </div>
@@ -1983,34 +2089,42 @@
                 <!-- Front Face -->
                 <div class="project-card-face project-card-front">
                     <div class="project-modal-close" onclick="closeProjectModal()">×</div>
-                    <div id="modalProjectImage" style="width: 140px; height: 140px; border-radius: 1.25rem; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 4rem; box-shadow: 0 20px 60px rgba(168, 85, 247, 0.4);"></div>
+                    <div id="modalProjectImage"
+                        style="width: 140px; height: 140px; border-radius: 1.25rem; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 4rem; box-shadow: 0 20px 60px rgba(168, 85, 247, 0.4);">
+                    </div>
                     <h2 class="project-modal-title" id="modalProjectTitle">Project Title</h2>
-                    <p id="modalProjectDescription" style="font-size: 1rem; line-height: 1.7; color: #cbd5e1; margin-bottom: 2rem; text-align: center;"></p>
-                    <button onclick="document.getElementById('projectFlipCard').classList.add('flipped')" class="modal-flip-button">
+                    <p id="modalProjectDescription"
+                        style="font-size: 1rem; line-height: 1.7; color: #cbd5e1; margin-bottom: 2rem; text-align: center;">
+                    </p>
+                    <button onclick="document.getElementById('projectFlipCard').classList.add('flipped')"
+                        class="modal-flip-button">
                         View Details →
                     </button>
                 </div>
-                
+
                 <!-- Back Face -->
                 <div class="project-card-face project-card-back">
                     <div class="project-modal-close" onclick="closeProjectModal()">×</div>
-                    <h2 class="project-modal-title" id="modalProjectTitleBack" style="font-size: 1.5rem;">Project Title</h2>
-                    
+                    <h2 class="project-modal-title" id="modalProjectTitleBack" style="font-size: 1.5rem;">Project Title
+                    </h2>
+
                     <div class="project-modal-section">
                         <h4>Technical Details</h4>
-                        <p id="modalProjectTechnical" style="color: #cbd5e1; line-height: 1.7; font-size: 0.875rem;"></p>
+                        <p id="modalProjectTechnical" style="color: #cbd5e1; line-height: 1.7; font-size: 0.875rem;">
+                        </p>
                     </div>
-                    
+
                     <div class="project-modal-section">
                         <h4>Key Achievements</h4>
-                        <p id="modalProjectAchievements" style="color: #cbd5e1; line-height: 1.7; font-size: 0.875rem;"></p>
+                        <p id="modalProjectAchievements" style="color: #cbd5e1; line-height: 1.7; font-size: 0.875rem;">
+                        </p>
                     </div>
-                    
+
                     <div class="project-modal-section">
                         <h4>Technologies Used</h4>
                         <div id="modalProjectTags" style="display: flex; flex-wrap: wrap; gap: 0.5rem;"></div>
                     </div>
-                    
+
                     <div class="project-modal-links">
                         <a href="#" id="modalProjectGithub" class="project-modal-link" target="_blank">
                             💻 GitHub
@@ -2022,8 +2136,9 @@
                             📄 Paper
                         </a>
                     </div>
-                    
-                    <button onclick="document.getElementById('projectFlipCard').classList.remove('flipped')" class="modal-flip-button">
+
+                    <button onclick="document.getElementById('projectFlipCard').classList.remove('flipped')"
+                        class="modal-flip-button">
                         ← Back
                     </button>
                 </div>
@@ -2084,7 +2199,7 @@
         document.addEventListener('mousemove', (e) => {
             mouseX = e.clientX;
             mouseY = e.clientY;
-            
+
             cursorLight.style.left = mouseX + 'px';
             cursorLight.style.top = mouseY + 'px';
             cursorDot.style.left = mouseX + 'px';
@@ -2116,7 +2231,7 @@
             for (let x = 0; x < canvas.width; x += gridSize) {
                 for (let y = 0; y < canvas.height; y += gridSize) {
                     let intensity = 0;
-                    
+
                     waves.forEach(wave => {
                         const distance = Math.sqrt((x - wave.x) ** 2 + (y - wave.y) ** 2);
                         const wavePhase = (distance - wave.radius) / 20;
@@ -2125,7 +2240,7 @@
 
                     if (Math.abs(intensity) > 0.3) {
                         const size = Math.abs(intensity) * 3;
-                        ctx.fillStyle = intensity > 0 
+                        ctx.fillStyle = intensity > 0
                             ? `rgba(168, 85, 247, ${Math.abs(intensity) * 0.35})`
                             : `rgba(139, 92, 246, ${Math.abs(intensity) * 0.25})`;
                         ctx.fillRect(x, y, size, size);
@@ -2142,38 +2257,38 @@
         const navLinks = document.querySelectorAll('.nav-link');
         const blochArrow = document.getElementById('blochArrow');
         const sections = ['hero', 'about', 'skills', 'projects', 'publications', 'experience', 'speaking', 'contact'];
-        
+
         // Calculate rotation for each section - arrow moves around Bloch sphere
         const rotations = {
-            hero: { 
+            hero: {
                 transform: 'translate(-50%, -100%) rotateZ(0deg)',
                 tip: 'translateY(-40px)'
             },
-            about: { 
+            about: {
                 transform: 'translate(-50%, -100%) rotateZ(40deg)',
                 tip: 'translateY(-40px)'
             },
-            skills: { 
+            skills: {
                 transform: 'translate(-50%, -100%) rotateZ(80deg)',
                 tip: 'translateY(-40px)'
             },
-            projects: { 
+            projects: {
                 transform: 'translate(-50%, -100%) rotateZ(120deg)',
                 tip: 'translateY(-40px)'
             },
-            publications: { 
+            publications: {
                 transform: 'translate(-50%, -100%) rotateZ(160deg)',
                 tip: 'translateY(-40px)'
             },
-            experience: { 
+            experience: {
                 transform: 'translate(-50%, -100%) rotateZ(200deg)',
                 tip: 'translateY(-40px)'
             },
-            speaking: { 
+            speaking: {
                 transform: 'translate(-50%, -100%) rotateZ(240deg)',
                 tip: 'translateY(-40px)'
             },
-            contact: { 
+            contact: {
                 transform: 'translate(-50%, -100%) rotateZ(280deg)',
                 tip: 'translateY(-40px)'
             }
@@ -2181,20 +2296,20 @@
 
         // Scroll detection
         let currentSection = 'hero';
-        
+
         function updateActiveSection() {
             const scrollPosition = window.scrollY + window.innerHeight / 2;
-            
+
             sections.forEach(sectionId => {
                 const section = document.getElementById(sectionId);
                 if (section) {
                     const sectionTop = section.offsetTop;
                     const sectionBottom = sectionTop + section.offsetHeight;
-                    
+
                     if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
                         if (currentSection !== sectionId) {
                             currentSection = sectionId;
-                            
+
                             // Update nav links
                             navLinks.forEach(link => {
                                 if (link.dataset.section === sectionId) {
@@ -2203,11 +2318,13 @@
                                     link.classList.remove('active');
                                 }
                             });
-                            
+
                             // Update Bloch arrow - moves around sphere
-                            blochArrow.style.transform = rotations[sectionId].transform;
+                            if (blochArrow) {
+                                blochArrow.style.transform = rotations[sectionId].transform;
+                            }
                         }
-                        
+
                         // Show/hide entanglement based on section
                         if (sectionId === 'skills' || sectionId === 'projects' || sectionId === 'publications') {
                             document.body.classList.add('in-skills-section');
@@ -2224,7 +2341,7 @@
 
         // Scroll to top button visibility
         const scrollToTopBtn = document.getElementById('scrollToTop');
-        
+
         window.addEventListener('scroll', () => {
             if (window.scrollY > 500) {
                 scrollToTopBtn.classList.add('visible');
@@ -2262,7 +2379,7 @@
             { name: 'NumPy & Pandas', projects: ['project-qbho', 'project-darktrace'], papers: ['pub-1'] },
             { name: 'Cloud (AWS/Azure)', projects: [], papers: [] }
         ];
-        
+
         const researchSkills = [
             { name: 'Machine Learning', projects: ['project-darktrace', 'project-fakenews'], papers: [] },
             { name: 'Data Pipelines', projects: ['project-darktrace', 'project-inventory'], papers: [] },
@@ -2283,7 +2400,7 @@
                 achievements: 'Building "Q-AI" - an AI-assisted quantum lab agent that suggests gates, analyzes simulation outcomes, and auto-generates circuit improvements. Integrated voice assistant guides users through each experimental phase. Designed clickable quantum gates for intuitive experimentation.',
                 tags: ['Qiskit', 'Python', 'Quantum Teleportation', 'AI Agent', 'Voice Interface', '3D Visualization'],
                 github: 'https://github.com/VarunRathore137/Quantum-Teleportation-Experiment',
-               
+
                 paper: ''
             },
             'project-quantumai': {
@@ -2295,7 +2412,7 @@
                 achievements: 'Building a conversational Q-AI Agent that interprets user queries, demonstrates QDSA concepts step-by-step, and generates quantum circuits on demand. Empowers learners with interactive 3D visualizations and automated circuit optimization suggestions.',
                 tags: ['3D Simulation', 'QDSA', 'AI Agent', 'Quantum Algorithms', 'Education', 'Python'],
                 github: '',
-               
+
                 paper: ''
             },
             'project-qbho': {
@@ -2307,7 +2424,7 @@
                 achievements: 'Achieved ~85% faster convergence on test datasets compared to classical solvers. Successfully benchmarked performance against traditional optimization methods. Part of research work at QRACE, NIT Delhi.',
                 tags: ['QBHO', 'QAOA', 'Python', 'Qiskit', 'Optimization', 'Research'],
                 github: '',
-                
+
                 paper: ''
             },
             'project-quantumstudio': {
@@ -2319,7 +2436,7 @@
                 achievements: 'Created an intuitive drag-and-drop system for quantum circuit construction accessible to both beginners and experts. Implemented real-time quantum state simulation with visual feedback. Successfully demonstrated quantum algorithms including Deutsch-Jozsa, Grover\'s search, and basic quantum teleportation protocols through the visual interface.',
                 tags: ['React', 'TypeScript', 'Qiskit', 'Python', 'Quantum Circuit', 'Drag-and-Drop', 'Quantum Algorithm'],
                 github: 'https://github.com/VarunRathore137/quantum-studio',
-            
+
                 paper: ''
             },
             'project-inventory': {
@@ -2331,7 +2448,7 @@
                 achievements: 'Tested APIs using PyTest with comprehensive test coverage. Validated workflows via Swagger UI. Designed backend logic suitable for ETL-style data processing and reporting. Demonstrated strong backend development and database design skills.',
                 tags: ['Python', 'FastAPI', 'SQLite', 'REST API', 'SQL', 'PyTest'],
                 github: 'https://github.com/VarunRathore137/inventory-system-fastapi',
-                
+
                 paper: ''
             },
             'project-darktrace': {
@@ -2343,7 +2460,7 @@
                 achievements: 'Achieved 95% accuracy, outperforming baseline models. Led a 4-member team to successful real-time deployment. Ranked Top 10 in hackathon among competitive field. Demonstrated strong team leadership and technical implementation skills. Successfully deployed the model for real-time crime detection with sub-second inference times.',
                 tags: ['Python', 'NLP', 'Machine Learning', 'Data Pipeline', 'Team Leadership'],
                 github: 'https://github.com/VarunRathore137/darktrace-ai-',
-                
+
                 paper: ''
             },
             'project-tripbot': {
@@ -2355,7 +2472,7 @@
                 achievements: 'Created a fully customizable trip planning experience allowing users to modify every aspect of their journey. Integrated real-time data for accurate travel times and distances. Designed an intuitive interface that simplifies complex travel planning into easy-to-follow daily itineraries. Successfully generated hundreds of personalized trips covering 20+ Indian states.',
                 tags: ['OpenAI API', 'Python', 'Maps API', 'NLP', 'Travel Tech', 'Web Development'],
                 github: 'https://github.com/VarunRathore137/tripbot-india',
-                
+
                 paper: ''
             },
             'project-fakenews': {
@@ -2367,7 +2484,7 @@
                 achievements: 'Achieved high accuracy in distinguishing fake news from authentic articles. Created RESTful API endpoints for real-time verification with sub-second response times. Designed scalable architecture suitable for handling high traffic loads. Implemented confidence scoring to provide users with reliability metrics for predictions. Successfully deployed as a web service with clean UI for easy article verification.',
                 tags: ['Python', 'Flask', 'NLP', 'Machine Learning', 'Logistic Regression', 'SVM', 'scikit-learn'],
                 github: 'https://github.com/VarunRathore137/fake-news-detection',
-                
+
                 paper: ''
             },
             'project-portfolio': {
@@ -2388,27 +2505,27 @@
         function openProjectModal(projectId) {
             const project = projectDetails[projectId];
             if (!project) return;
-            
+
             const modal = document.getElementById('projectModal');
             const flipCard = document.getElementById('projectFlipCard');
-            
+
             flipCard.classList.remove('flipped');
-            
+
             document.getElementById('modalProjectTitle').textContent = project.title;
-            
+
             // Show project image instead of emoji
             const modalImage = document.getElementById('modalProjectImage');
             modalImage.style.backgroundImage = `url('${project.image}')`;
             modalImage.style.backgroundSize = 'cover';
             modalImage.style.backgroundPosition = 'center';
             modalImage.textContent = ''; // Clear any emoji
-            
+
             document.getElementById('modalProjectDescription').textContent = project.description;
-            
+
             document.getElementById('modalProjectTitleBack').textContent = project.title;
             document.getElementById('modalProjectTechnical').textContent = project.technical;
             document.getElementById('modalProjectAchievements').textContent = project.achievements;
-            
+
             const tagsContainer = document.getElementById('modalProjectTags');
             tagsContainer.innerHTML = '';
             project.tags.forEach(tag => {
@@ -2417,26 +2534,26 @@
                 tagEl.textContent = tag;
                 tagsContainer.appendChild(tagEl);
             });
-            
-   document.getElementById('modalProjectGithub').href = project.github;
-document.getElementById('modalProjectDemo').href = project.demo;
-document.getElementById('modalProjectPaper').href = project.paper;
 
-// Hide demo button if no demo link
-if (!project.demo) {
-    document.getElementById('modalProjectDemo').style.display = 'none';
-} else {
-    document.getElementById('modalProjectDemo').style.display = 'inline-block';
-}
+            document.getElementById('modalProjectGithub').href = project.github;
+            document.getElementById('modalProjectDemo').href = project.demo;
+            document.getElementById('modalProjectPaper').href = project.paper;
 
-// Hide paper button if no paper link
-if (!project.paper) {
-    document.getElementById('modalProjectPaper').style.display = 'none';
-} else {
-    document.getElementById('modalProjectPaper').style.display = 'inline-block';
-}
+            // Hide demo button if no demo link
+            if (!project.demo) {
+                document.getElementById('modalProjectDemo').style.display = 'none';
+            } else {
+                document.getElementById('modalProjectDemo').style.display = 'inline-block';
+            }
 
-            
+            // Hide paper button if no paper link
+            if (!project.paper) {
+                document.getElementById('modalProjectPaper').style.display = 'none';
+            } else {
+                document.getElementById('modalProjectPaper').style.display = 'inline-block';
+            }
+
+
             modal.classList.add('show');
             document.body.style.overflow = 'hidden';
         }
@@ -2462,14 +2579,14 @@ if (!project.paper) {
 
             entanglementCtx.beginPath();
             entanglementCtx.moveTo(start.x, start.y);
-            
+
             const controlPoint1X = start.x + (end.x - start.x) * 0.3;
             const controlPoint1Y = start.y;
             const controlPoint2X = start.x + (end.x - start.x) * 0.7;
             const controlPoint2Y = end.y;
-            
+
             entanglementCtx.bezierCurveTo(controlPoint1X, controlPoint1Y, controlPoint2X, controlPoint2Y, end.x, end.y);
-            
+
             entanglementCtx.strokeStyle = `rgba(${color}, 0.6)`;
             entanglementCtx.lineWidth = 2;
             entanglementCtx.stroke();
@@ -2484,20 +2601,20 @@ if (!project.paper) {
             const numParticles = 5;
             for (let i = 0; i < numParticles; i++) {
                 const t = (i / numParticles + Date.now() / 2000) % 1;
-                const x = Math.pow(1-t, 3) * start.x + 
-                          3 * Math.pow(1-t, 2) * t * controlPoint1X + 
-                          3 * (1-t) * Math.pow(t, 2) * controlPoint2X + 
-                          Math.pow(t, 3) * end.x;
-                const y = Math.pow(1-t, 3) * start.y + 
-                          3 * Math.pow(1-t, 2) * t * controlPoint1Y + 
-                          3 * (1-t) * Math.pow(t, 2) * controlPoint2Y + 
-                          Math.pow(t, 3) * end.y;
-                
+                const x = Math.pow(1 - t, 3) * start.x +
+                    3 * Math.pow(1 - t, 2) * t * controlPoint1X +
+                    3 * (1 - t) * Math.pow(t, 2) * controlPoint2X +
+                    Math.pow(t, 3) * end.x;
+                const y = Math.pow(1 - t, 3) * start.y +
+                    3 * Math.pow(1 - t, 2) * t * controlPoint1Y +
+                    3 * (1 - t) * Math.pow(t, 2) * controlPoint2Y +
+                    Math.pow(t, 3) * end.y;
+
                 entanglementCtx.beginPath();
                 entanglementCtx.arc(x, y, 3, 0, Math.PI * 2);
                 entanglementCtx.fillStyle = `rgba(${color}, ${0.8 - t * 0.5})`;
                 entanglementCtx.fill();
-                
+
                 entanglementCtx.beginPath();
                 entanglementCtx.arc(x, y, 6, 0, Math.PI * 2);
                 entanglementCtx.fillStyle = `rgba(${color}, ${(0.3 - t * 0.2)})`;
@@ -2515,7 +2632,7 @@ if (!project.paper) {
 
         function animateEntanglements() {
             entanglementCtx.clearRect(0, 0, entanglementCanvas.width, entanglementCanvas.height);
-            
+
             activeEntanglements.forEach(connection => {
                 drawEntanglementConnection(connection.from, connection.to, connection.color);
             });
@@ -2529,81 +2646,85 @@ if (!project.paper) {
             const container = document.querySelector(containerSelector);
             const numSkills = skills.length;
             const radius = 350;
-            
+
             skills.forEach((skillData, index) => {
                 const skillEl = document.createElement('div');
                 skillEl.className = 'skill-item-3d';
                 skillEl.textContent = skillData.name;
                 skillEl.dataset.projects = skillData.projects.join(',');
                 skillEl.dataset.papers = skillData.papers.join(',');
-                
+
                 const angle = (index / numSkills) * 360;
                 skillEl.style.transform = `rotateY(${angle}deg) translateZ(${radius}px)`;
-                
+
                 // Hover to show entanglement (preview)
                 skillEl.addEventListener('mouseenter', () => {
                     // Don't show hover if skill is locked
                     if (lockedSkill === skillEl) return;
-                    
+
                     // Pause carousel
                     container.classList.add('paused');
-                    
+
                     // Only show if not locked on another skill
                     if (!lockedSkill) {
                         showEntanglement(skillEl);
                     }
                 });
-                
+
                 skillEl.addEventListener('mouseleave', () => {
                     // Don't clear if this skill is locked
                     if (lockedSkill === skillEl) return;
-                    
+
                     // Resume carousel if not locked
                     if (!lockedSkill) {
                         container.classList.remove('paused');
                         clearEntanglement();
                     }
                 });
-                
+
                 // Click to lock entanglement
                 skillEl.addEventListener('click', (e) => {
                     e.stopPropagation();
-                    
+
                     // If clicking same skill, unlock
                     if (lockedSkill === skillEl) {
                         unlockSkill();
                         return;
                     }
-                    
+
                     // Unlock previous skill if any
                     if (lockedSkill) {
                         lockedSkill.classList.remove('locked');
                         lockedSkill.classList.remove('entangled');
                     }
-                    
+
                     // Lock new skill
                     lockedSkill = skillEl;
                     skillEl.classList.add('locked');
                     container.classList.add('paused');
-                    
+
                     // Show entanglement
                     showEntanglement(skillEl);
                 });
-                
+
                 container.appendChild(skillEl);
             });
         }
 
+        // Initialize skills carousels
+        create3DCarouselSkills('#technicalSkillsOrbit', technicalSkills);
+        create3DCarouselSkills('#researchSkillsOrbit', researchSkills);
+
         function showEntanglement(skillEl) {
             // Clear previous
             clearEntanglement();
-            
+
             // Add entangled class to skill
             skillEl.classList.add('entangled');
-            
+
             const projectIds = skillEl.dataset.projects.split(',').filter(id => id);
             const paperIds = skillEl.dataset.papers.split(',').filter(id => id);
-            
+
             // Highlight and connect to related projects
             projectIds.forEach(projectId => {
                 const projectCard = document.querySelector(`[data-project-id="${projectId}"]`);
@@ -2616,7 +2737,7 @@ if (!project.paper) {
                     });
                 }
             });
-            
+
             // Highlight and connect to related papers
             paperIds.forEach(paperId => {
                 const paper = document.querySelector(`[data-paper-id="${paperId}"]`);
@@ -2690,7 +2811,7 @@ if (!project.paper) {
             { title: 'University Guest Lecture', desc: 'AI-ML and Quantum Computing', image: 'images/WhatsApp Image 2025-10-02 at 23.57.48_f083b8ba.jpg', icon: '🎓' },
             { title: 'Quantum Computing Workshop', desc: 'Hands on workshop on Quantum Computing', image: 'images/Hands-on-workshop.jpeg', icon: '⚛️' },
             { title: 'Technical Presentation', desc: 'Machine Learning Project', image: 'images/Technical Presentation.jpeg', icon: '💻' },
-            { title: 'Tech Fest', desc: 'NIT Delhi', image: 'images/Day 2 DDUC (39).JPG', icon: '🎪' }
+            { title: 'Tech Fest', desc: 'NIT Delhi', image: 'images/Day 2 DDUC (39).JPG', icon: '🎪' },
             { title: 'Session on AI, Blockchain and Quantum Computing', desc: 'Guest Speaker', image: 'images/IMG-20250406-WA0001.jpg', icon: '🎪' }
         ];
 
@@ -2699,21 +2820,21 @@ if (!project.paper) {
             item.className = 'carousel-item';
             const angle = (index / speakingEvents.length) * 360;
             item.style.transform = `rotateY(${angle}deg) translateZ(400px)`;
-            
+
             item.innerHTML = `
                 <div class="carousel-image" style="background-image: url('${event.image}'); background-size: cover; background-position: center;"></div>
                 <div class="carousel-title">${event.title}</div>
                 <div class="carousel-description">${event.desc}</div>
             `;
-            
+
             item.addEventListener('mouseenter', () => {
                 carousel.classList.add('paused');
             });
-            
+
             item.addEventListener('mouseleave', () => {
                 carousel.classList.remove('paused');
             });
-            
+
             carousel.appendChild(item);
         });
 
@@ -2731,18 +2852,18 @@ if (!project.paper) {
 
         function drawCircuit() {
             ctx2d.clearRect(0, 0, circuitCtx.width, circuitCtx.height);
-            
+
             // Draw qubit lines
             ctx2d.strokeStyle = '#a855f7';
             ctx2d.lineWidth = 2;
-            
+
             for (let i = 0; i < 3; i++) {
                 const y = 80 + i * 70;
                 ctx2d.beginPath();
                 ctx2d.moveTo(50, y);
                 ctx2d.lineTo(circuitCtx.width - 50, y);
                 ctx2d.stroke();
-                
+
                 ctx2d.fillStyle = '#a78bfa';
                 ctx2d.font = '16px JetBrains Mono';
                 ctx2d.fillText(`|q${i}⟩`, 10, y + 5);
@@ -2752,7 +2873,7 @@ if (!project.paper) {
             ctx2d.fillStyle = 'rgba(168, 85, 247, 0.3)';
             ctx2d.strokeStyle = '#a855f7';
             ctx2d.lineWidth = 2;
-            
+
             ctx2d.beginPath();
             ctx2d.roundRect(150, 60, 60, 40, 8);
             ctx2d.fill();
@@ -2760,7 +2881,7 @@ if (!project.paper) {
             ctx2d.fillStyle = '#e2e8f0';
             ctx2d.font = '18px JetBrains Mono';
             ctx2d.fillText('X', 175, 85);
-            
+
             ctx2d.fillStyle = 'rgba(168, 85, 247, 0.3)';
             ctx2d.beginPath();
             ctx2d.roundRect(350, 130, 60, 40, 8);
@@ -2769,7 +2890,7 @@ if (!project.paper) {
             ctx2d.fillStyle = '#e2e8f0';
             ctx2d.font = '14px JetBrains Mono';
             ctx2d.fillText('CNOT', 355, 155);
-            
+
             // Missing gate
             ctx2d.strokeStyle = '#ec4899';
             ctx2d.lineWidth = 3;
@@ -2789,7 +2910,7 @@ if (!project.paper) {
         hadamardGate.addEventListener('click', () => {
             if (!circuitCompleted) {
                 circuitCompleted = true;
-                
+
                 ctx2d.fillStyle = 'rgba(168, 85, 247, 0.5)';
                 ctx2d.strokeStyle = '#a855f7';
                 ctx2d.lineWidth = 2;
@@ -2800,10 +2921,10 @@ if (!project.paper) {
                 ctx2d.fillStyle = '#e2e8f0';
                 ctx2d.font = '20px JetBrains Mono';
                 ctx2d.fillText('H', 572, 225);
-                
+
                 hadamardGate.style.display = 'none';
                 contactRevealed.classList.add('show');
-                
+
                 for (let i = 0; i < 5; i++) {
                     setTimeout(() => {
                         const rect = circuitCanvas.getBoundingClientRect();
@@ -2822,4 +2943,5 @@ if (!project.paper) {
         });
     </script>
 </body>
+
 </html>
