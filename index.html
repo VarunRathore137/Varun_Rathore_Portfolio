@@ -1686,6 +1686,25 @@
             <div class="subsection">
                 <h3 class="subsection-title">Quantum Computing & Simulation</h3>
                 <div class="projects-grid">
+
+                    <div class="glass-card" data-project-id="project-hybrid-quantum-portfolio-optimizer">
+                        <div class="card-image"
+                            style="background-image: url('images/quantum-portfolio-optimizer.png'); background-size: cover; background-position: center;">
+                        </div>
+                        <h3 class="card-title">The Hybrid Quantum Portfolio Optimizer</h3>
+                        <p class="card-description">An Interactive Quantum-Inspired Portfolio Manager Using QAOA
+                            demonstrating how quantum computing principles can be applied to real-world portfolio
+                            optimization problems. It uses the Quantum Approximate Optimization Algorithm (QAOA) to
+                            select optimal stock portfolios from real market data, helping investors maximize returns
+                            while minimizing risk.</p>
+                        <div class="card-tags">
+                            <span class="tag">Qiskit</span>
+                            <span class="tag">QAOA</span>
+                            <span class="tag">Portfolio Optimization</span>
+                            <span class="tag">Stock-Market-Analysis</span>
+                        </div>
+                    </div>
+
                     <div class="glass-card" data-project-id="project-teleportation">
                         <div class="card-image"
                             style="background-image: url('images/quantum-teleportation.png'); background-size: cover; background-position: center;">
@@ -1706,7 +1725,10 @@
                         </div>
                         <h3 class="card-title">QUANTUMAI-VERSE</h3>
                         <p class="card-description">AI-powered 3D simulation environment for visualizing Quantum Data
-                            Structures and Algorithms with conversational Q-AI agent.</p>
+                            Structures and Algorithms with conversational Q-AI agent the Quantum AI Agent serving as a
+                            ‘Virtual-lab assistant’, capable of designing
+                            quantum circuits and evaluating experimental results - suggest quantum gates, analyze
+                            results, and optimize quantum circuits. </p>
                         <div class="card-tags">
                             <span class="tag">3D Simulation</span>
                             <span class="tag">QDSA</span>
@@ -2375,26 +2397,40 @@
 
         // Initialize 3D Skills with Carousel Style and Entanglement
         const technicalSkills = [
-            { name: 'Python', projects: ['project-inventory', 'project-darktrace', 'project-teleportation', 'project-qbho'], papers: ['pub-1'] },
+            { name: 'Python', projects: ['project-inventory', 'project-darktrace', 'project-teleportation', 'project-qbho', 'project-hybrid-quantum-portfolio-optimizer'], papers: ['pub-1'] },
             { name: 'FastAPI & REST', projects: ['project-inventory'], papers: [] },
             { name: 'SQL & Databases', projects: ['project-inventory'], papers: [] },
             { name: 'Git & Testing', projects: ['project-inventory', 'project-darktrace'], papers: [] },
             { name: 'C/C++', projects: [], papers: [] },
-            { name: 'NumPy & Pandas', projects: ['project-qbho', 'project-darktrace'], papers: ['pub-1'] },
+            { name: 'NumPy & Pandas', projects: ['project-qbho', 'project-darktrace', 'project-hybrid-quantum-portfolio-optimizer'], papers: ['pub-1'] },
             { name: 'Cloud (AWS/Azure)', projects: [], papers: [] }
         ];
 
         const researchSkills = [
             { name: 'Machine Learning', projects: ['project-darktrace', 'project-fakenews'], papers: [] },
             { name: 'Data Pipelines', projects: ['project-darktrace', 'project-inventory'], papers: [] },
-            { name: 'Qiskit & Quantum', projects: ['project-teleportation', 'project-qbho', 'project-quantumai', 'project-quantumstudio'], papers: ['pub-1'] },
-            { name: 'Quantum Algorithms', projects: ['project-qbho', 'project-teleportation', 'project-quantumstudio'], papers: ['pub-1'] },
+            { name: 'Qiskit & Quantum', projects: ['project-teleportation', 'project-qbho', 'project-quantumai', 'project-quantumstudio', 'project-hybrid-quantum-portfolio-optimizer'], papers: ['pub-1'] },
+            { name: 'Quantum Algorithms', projects: ['project-qbho', 'project-teleportation', 'project-quantumstudio', 'project-hybrid-quantum-portfolio-optimizer'], papers: ['pub-1'] },
             { name: 'AI/NLP', projects: ['project-darktrace', 'project-teleportation', 'project-quantumai', 'project-tripbot', 'project-fakenews'], papers: [] },
-            { name: 'Algorithm Design', projects: ['project-qbho', 'project-darktrace'], papers: [] }
+            { name: 'Algorithm Design', projects: ['project-qbho', 'project-darktrace', 'project-hybrid-quantum-portfolio-optimizer'], papers: [] }
         ];
 
         // Project modal data
         const projectDetails = {
+
+            'project-hybrid-quantum-portfolio-optimizer': {
+                title: 'The Hybrid Quantum Portfolio Optimizer',
+                icon: '📈',
+                image: 'images/quantum-portfolio-optimizer.png',
+                description: 'A hybrid quantum-classical financial modeling tool that bridges real-time market data with the Quantum Approximate Optimization Algorithm (QAOA). It solves combinatorial portfolio selection problems by mapping financial risk-return constraints onto NISQ-era quantum processors.',
+                technical: 'Architected a modular Python library using Qiskit Primitives V2 and yfinance. Implemented a custom Manual QUBO engine to map financial constraints (budget, risk, covariance) directly to Hamiltonians without black-box converters. Features a clean MVC architecture that decouples data ingestion, mathematical formulation, and quantum backend execution.',
+                achievements: 'Benchmarked QAOA solution fidelity against classical NumPy Eigensolvers to quantify the impact of ansatz depth and shot noise. Visualized the "Efficient Frontier" to compare quantum approximate solutions against exact classical ground states. Optimized variational parameters using COBYLA for NISQ-friendly execution.',
+                tags: ['Qiskit', 'Python', 'QAOA', 'Financial Modeling', 'QUBO', 'Matplotlib'],
+                github: 'https://github.com/VarunRathore137/Quantum-Portfolio-Optimization-Demo',
+                demo: 'https://github.com/VarunRathore137/Quantum-Portfolio-Optimization-Demo/blob/main/main.ipynb',
+                paper: ''
+            },
+
             'project-teleportation': {
                 title: 'Quantum Teleportation Experiment',
                 icon: '🌌',
