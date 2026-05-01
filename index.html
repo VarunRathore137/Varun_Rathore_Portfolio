@@ -8,6 +8,36 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
     <title>Varun Rathore | Software Engineer & Quantum Computing Specialist</title>
+    <title>Contact Form</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "ozUVATT7xIGyc9dxm",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            const form = document.getElementById('contactForm');
+            if (form) {
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    emailjs.sendForm('service_txc47fa', 'template_vyopwcj', this)
+                        .then(() => {
+                            alert('Thank you! Your message has been sent successfully. I\'ll get back to you soon.');
+                            this.reset();
+                            console.log('SUCCESS!');
+                        }, (error) => {
+                            alert('Failed to send message. Please try again or contact me directly.');
+                            console.log('FAILED...', error);
+                        });
+                }
+                );
+            }
+        }
+    </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
@@ -1692,7 +1722,7 @@
                             style="background-image: url('images/quantum-portfolio-optimizer.png'); background-size: cover; background-position: center;">
                         </div>
                         <h3 class="card-title">The Hybrid Quantum Portfolio Optimizer</h3>
-                        <p class="card-description">An Interactive Quantum-Inspired Portfolio Manager Using QAOA
+                        <p class="card-description">An Interactive Quantum-Inspired PortfolFio Manager Using QAOA
                             demonstrating how quantum computing principles can be applied to real-world portfolio
                             optimization problems. It uses the Quantum Approximate Optimization Algorithm (QAOA) to
                             select optimal stock portfolios from real market data, helping investors maximize returns
@@ -2016,18 +2046,20 @@
                         </div>
                         <div class="contact-item">
                             <span class="contact-icon">📍</span>
-                            <span>Ujjain, Madhya Pradesh, India</span>
+                            <span> Pune, Maharashtra, India</span>
                         </div>
 
                         <!-- Send Message Section -->
-                        <div class="send-message-section">
+                          <div class="send-message-section">
                             <h4 style="font-size: 1.25rem; color: #d946ef; margin: 2rem 0 1rem;">📨 Send a Message</h4>
-                            <form class="contact-form" id="contactForm">
-                                <input type="text" placeholder="Your Name" class="form-input" required>
-                                <input type="email" placeholder="Your Email" class="form-input" required>
-                                <textarea placeholder="Your Message" class="form-textarea" rows="4" required></textarea>
-                                <button type="submit" class="form-submit">Send Message</button>
-                            </form>
+                         <form class="contact-form" id="contactForm">
+          <input type="text" name="user_name" placeholder="Your Name" class="form-input" required>
+          <input type="email" name="user_email" placeholder="Your Email" class="form-input" required>
+          <textarea name="message" placeholder="Subject" class="form-textarea" rows="4" required></textarea>
+        <button type="submit" class="form-submit">Send Message</button>
+       
+    </form>
+                            
                         </div>
                     </div>
 
@@ -2036,8 +2068,7 @@
                         <h4 style="font-size: 1.25rem; color: #d946ef; margin: 2rem 0 1rem;">Current Status</h4>
                         <div class="status-item">
                             <span style="font-size: 1.5rem;">🟢</span>
-                            <span style="margin-left: 0.75rem;">Available for SDE, AI/ML, Data Engineer, and Quantum
-                                Computing jobs and internships (Summer 2026)</span>
+                            <span style="margin-left: 0.75rem;">Available for SDE, AI/ML, Data Engineer, Backend Developer and Quantum Computing jobs and internships (Immediate available)</span>
                         </div>
                         <div class="status-item" style="margin-top: 0.75rem;">
                             <span style="font-size: 1.5rem;">🎓</span>
@@ -2045,7 +2076,7 @@
                         </div>
                         <div class="status-item" style="margin-top: 0.75rem;">
                             <span style="font-size: 1.5rem;">💼</span>
-                            <span style="margin-left: 0.75rem;">Open to: Backend Dev, Full-Stack, AI/ML Engineer,
+                            <span style="margin-left: 0.75rem;">Open to: Backend Dev, Full-Stack, AI/ML Engineer, Data Engineering,
                                 Quantum Developer roles</span>
                         </div>
                     </div>
@@ -2376,12 +2407,7 @@
             }
         });
 
-        // Contact form handler
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your message! I\'ll get back to you soon.');
-            e.target.reset();
-        });
+        // Contact form handler is now in the window.onload script in the head section
 
         // Smooth scroll for nav links
         navLinks.forEach(link => {
