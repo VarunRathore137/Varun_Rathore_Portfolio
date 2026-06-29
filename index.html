@@ -11,18 +11,18 @@
     <title>Contact Form</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function() {
+        (function () {
             // https://dashboard.emailjs.com/admin/account
             emailjs.init({
-              publicKey: "ozUVATT7xIGyc9dxm",
+                publicKey: "ozUVATT7xIGyc9dxm",
             });
         })();
     </script>
     <script type="text/javascript">
-        window.onload = function() {
+        window.onload = function () {
             const form = document.getElementById('contactForm');
             if (form) {
-                form.addEventListener('submit', function(event) {
+                form.addEventListener('submit', function (event) {
                     event.preventDefault();
                     emailjs.sendForm('service_txc47fa', 'template_vyopwcj', this)
                         .then(() => {
@@ -1591,7 +1591,8 @@
                 style="background-image: url('images/profile_photo2.png'); background-size: cover;"></div>
 
             <h1 class="hero-name">Varun Rathore</h1>
-            <p class="hero-title">Software & Applied AI Engineer | High-Concurrency Backends | Agentic Workflows & Scientific Computing</p>
+            <p class="hero-title">Software & Applied AI Engineer | High-Concurrency Backends | Agentic Workflows &
+                Scientific Computing</p>
             <p class="hero-description">
                 Final-year B.Tech (CSE) student with expertise in backend development, AI/ML systems, data engineering,
                 and quantum computing. Proficient in Python, FastAPI, SQL, Qiskit, and cloud technologies. Top 10 in
@@ -1657,7 +1658,8 @@
                 </p>
                 <p style="font-size: 1.0625rem; line-height: 1.8; color: #cbd5e1; margin-bottom: 1.5rem;">
                     My experience includes architecting highly concurrent FastAPI backends capable of 2,300+ req/sec,
-                    engineering autonomous LLM workflows, and implementing quantum algorithms with 85% faster convergence
+                    engineering autonomous LLM workflows, and implementing quantum algorithms with 85% faster
+                    convergence
                     at QRACE (NIT Delhi).
                 </p>
                 <p style="font-size: 1.0625rem; line-height: 1.8; color: #cbd5e1;">
@@ -1712,12 +1714,14 @@
             <div class="subsection">
                 <h3 class="subsection-title">AI/ML & Backend Development</h3>
                 <div class="projects-grid">
-                     <div class="glass-card" data-project-id="project-traffiq">
+                    <div class="glass-card" data-project-id="project-traffiq">
                         <div class="card-image"
                             style="background-image: url('images/TraffIQ.png'); background-size: cover; background-position: center;">
                         </div>
                         <h3 class="card-title">TraffiQ - Edge-Deployed Computer Vision</h3>
-                        <p class="card-description">An automated edge-deployed computer vision pipeline integrating YOLOv8 and OpenCV to identify real-time traffic patterns. Architected the data ingestion layer and optimized the models to achieve a 98% object detection accuracy rate.</p>
+                        <p class="card-description">An automated edge-deployed computer vision pipeline integrating
+                            YOLOv8 and OpenCV to identify real-time traffic patterns. Architected the data ingestion
+                            layer and optimized the models to achieve a 98% object detection accuracy rate.</p>
                         <div class="card-tags">
                             <span class="tag">YOLOv8</span>
                             <span class="tag">OpenCV</span>
@@ -1733,7 +1737,10 @@
                             style="background-image: url('images/ZENO.png'); background-size: cover; background-position: center;">
                         </div>
                         <h3 class="card-title">Project ZENO - Intelligent Developer Copilot</h3>
-                        <p class="card-description">A voice-driven, autonomous AI developer assistant designed to manage complex engineering workflows, track project states, and facilitate interactive code debugging. Integrates advanced LLM reasoning and RAG architecture to evaluate real-time context and automate daily developer tasks.</p>
+                        <p class="card-description">A voice-driven, autonomous AI developer assistant designed to manage
+                            complex engineering workflows, track project states, and facilitate interactive code
+                            debugging. Integrates advanced LLM reasoning and RAG architecture to evaluate real-time
+                            context and automate daily developer tasks.</p>
                         <div class="card-tags">
                             <span class="tag">Generative AI</span>
                             <span class="tag">RAG</span>
@@ -1748,7 +1755,10 @@
                             style="background-image: url('images/DarkTrace Shadow AI.png'); background-size: cover; background-position: center;">
                         </div>
                         <h3 class="card-title">DarkTrace Shadow AI - High-Throughput Microservice</h3>
-                        <p class="card-description">An end-to-end Python data pipeline and highly concurrent FastAPI backend designed to ingest, clean, and process over 50,000 unstructured data logs. Scaled system throughput to 2,300+ requests per second while sustaining a sub-millisecond inference latency of 0.46ms.</p>
+                        <p class="card-description">An end-to-end Python data pipeline and highly concurrent FastAPI
+                            backend designed to ingest, clean, and process over 50,000 unstructured data logs. Scaled
+                            system throughput to 2,300+ requests per second while sustaining a sub-millisecond inference
+                            latency of 0.46ms.</p>
                         <div class="card-tags">
                             <span class="tag">Python</span>
                             <span class="tag">FastAPI</span>
@@ -1787,7 +1797,7 @@
                         </div>
                     </div>
 
-                     
+
 
                     <div class="glass-card" data-project-id="project-portfolio">
                         <div class="card-image"
@@ -1812,7 +1822,7 @@
 
                     <div class="glass-card" data-project-id="project-hybrid-quantum-portfolio-optimizer">
                         <div class="card-image"
-                            style="background-image: url('images/quantum-portfolio-optimizer.png'); background-size: cover; background-position: center;">
+                            style="background-image: url('images/Hybrid Quantum Portfolio Optimizer.png'); background-size: cover; background-position: center;">
                         </div>
                         <h3 class="card-title">The Hybrid Quantum Portfolio Optimizer</h3>
                         <p class="card-description">An Interactive Quantum-Inspired PortfolFio Manager Using QAOA
@@ -1847,7 +1857,10 @@
                             style="background-image: url('images/Q-AI.png'); background-size: cover; background-position: center;">
                         </div>
                         <h3 class="card-title">QUANTUMAI-VERSE</h3>
-                        <p class="card-description">An AI-powered 3D simulation environment utilizing an autonomous LLM tool-calling layer. The conversational Q-AI agent serves as a virtual lab assistant, capable of dynamically writing Python code, evaluating experimental results, and optimizing complex quantum circuits on cloud infrastructure.</p>
+                        <p class="card-description">An AI-powered 3D simulation environment utilizing an autonomous LLM
+                            tool-calling layer. The conversational Q-AI agent serves as a virtual lab assistant, capable
+                            of dynamically writing Python code, evaluating experimental results, and optimizing complex
+                            quantum circuits on cloud infrastructure.</p>
                         <div class="card-tags">
                             <span class="tag">3D Simulation</span>
                             <span class="tag">QDSA</span>
@@ -2058,16 +2071,18 @@
                         </div>
 
                         <!-- Send Message Section -->
-                          <div class="send-message-section">
+                        <div class="send-message-section">
                             <h4 style="font-size: 1.25rem; color: #d946ef; margin: 2rem 0 1rem;">📨 Send a Message</h4>
-                         <form class="contact-form" id="contactForm">
-          <input type="text" name="user_name" placeholder="Your Name" class="form-input" required>
-          <input type="email" name="user_email" placeholder="Your Email" class="form-input" required>
-          <textarea name="message" placeholder="Subject" class="form-textarea" rows="4" required></textarea>
-        <button type="submit" class="form-submit">Send Message</button>
-       
-    </form>
-                            
+                            <form class="contact-form" id="contactForm">
+                                <input type="text" name="user_name" placeholder="Your Name" class="form-input" required>
+                                <input type="email" name="user_email" placeholder="Your Email" class="form-input"
+                                    required>
+                                <textarea name="message" placeholder="Subject" class="form-textarea" rows="4"
+                                    required></textarea>
+                                <button type="submit" class="form-submit">Send Message</button>
+
+                            </form>
+
                         </div>
                     </div>
 
@@ -2076,7 +2091,8 @@
                         <h4 style="font-size: 1.25rem; color: #d946ef; margin: 2rem 0 1rem;">Current Status</h4>
                         <div class="status-item">
                             <span style="font-size: 1.5rem;">🟢</span>
-                            <span style="margin-left: 0.75rem;">Available for SDE, AI/ML, Data Engineer, Backend Developer and Quantum Computing jobs and internships (Immediate available)</span>
+                            <span style="margin-left: 0.75rem;">Available for SDE, AI/ML, Data Engineer, Backend
+                                Developer and Quantum Computing jobs and internships (Immediate available)</span>
                         </div>
                         <div class="status-item" style="margin-top: 0.75rem;">
                             <span style="font-size: 1.5rem;">🎓</span>
@@ -2084,7 +2100,8 @@
                         </div>
                         <div class="status-item" style="margin-top: 0.75rem;">
                             <span style="font-size: 1.5rem;">💼</span>
-                            <span style="margin-left: 0.75rem;">Open to: Backend Dev, Full-Stack, AI/ML Engineer, Data Engineering,
+                            <span style="margin-left: 0.75rem;">Open to: Backend Dev, Full-Stack, AI/ML Engineer, Data
+                                Engineering,
                                 Quantum Developer roles</span>
                         </div>
                     </div>
@@ -2431,9 +2448,9 @@
 
         // Initialize 3D Skills with Carousel Style and Entanglement
         const technicalSkills = [
-            { name: 'Python', projects: ['project-traffiq','project-inventory', 'project-darktrace', 'project-teleportation', 'project-qbho', 'project-hybrid-quantum-portfolio-optimizer'], papers: ['pub-1'] },
-            { name: 'FastAPI & REST', projects: ['project-traffiq','project-inventory'], papers: [] },
-            { name: 'Computer Vision', projects: ['project-traffiq'], papers: []},
+            { name: 'Python', projects: ['project-traffiq', 'project-inventory', 'project-darktrace', 'project-teleportation', 'project-qbho', 'project-hybrid-quantum-portfolio-optimizer'], papers: ['pub-1'] },
+            { name: 'FastAPI & REST', projects: ['project-traffiq', 'project-inventory'], papers: [] },
+            { name: 'Computer Vision', projects: ['project-traffiq'], papers: [] },
             { name: 'SQL & Databases', projects: ['project-inventory', 'project-'], papers: [] },
             { name: 'Git & Testing', projects: ['project-inventory', 'project-darktrace'], papers: [] },
             { name: 'C/C++', projects: ['project-quantumai'], papers: [] },
@@ -2446,23 +2463,23 @@
             { name: 'Data Pipelines', projects: ['project-darktrace', 'project-inventory'], papers: [] },
             { name: 'Qiskit & Quantum', projects: ['project-teleportation', 'project-qbho', 'project-quantumai', 'project-quantumstudio', 'project-hybrid-quantum-portfolio-optimizer'], papers: ['pub-1'] },
             { name: 'Quantum Algorithms', projects: ['project-qbho', 'project-teleportation', 'project-quantumstudio', 'project-hybrid-quantum-portfolio-optimizer'], papers: ['pub-1'] },
-            { name: 'AI/NLP', projects: ['project-traffiq','project-darktrace', 'project-teleportation', 'project-quantumai', 'project-tripbot'], papers: [] },
+            { name: 'AI/NLP', projects: ['project-traffiq', 'project-darktrace', 'project-teleportation', 'project-quantumai', 'project-tripbot'], papers: [] },
             { name: 'Algorithm Design', projects: ['project-qbho', 'project-darktrace', 'project-hybrid-quantum-portfolio-optimizer'], papers: [] }
         ];
 
         // Project modal data
         const projectDetails = {
 
-  'project-traffiq': {
-    title: 'TraffiQ - Edge-Deployed Computer Vision',
-    icon: '🚦',
-    image: 'images/TraffiQ.png',
-    description: 'An automated edge-deployed computer vision pipeline integrating YOLOv8 and OpenCV to identify real-time traffic patterns.',
-    technical: 'Architected the data ingestion layer using Python and OpenCV to capture and preprocess live video feeds at the edge. Deployed YOLOv8 for real-time vehicle detection and classification, optimizing the model inference pipeline for low-latency edge hardware. Integrated a FastAPI microservices backend to expose detection results and traffic metrics.',
-    achievements: 'Optimized model and pipeline to achieve a 98% object detection accuracy rate. Designed the full data ingestion architecture enabling real-time processing on edge-deployed hardware without relying on cloud compute for inference.',
-    tags: ['YOLOv8', 'OpenCV', 'Python', 'Computer Vision', 'Data Ingestion', 'Edge Deployment'],
-    github: '',
-},
+            'project-traffiq': {
+                title: 'TraffiQ - Edge-Deployed Computer Vision',
+                icon: '🚦',
+                image: 'images/TraffiQ.png',
+                description: 'An automated edge-deployed computer vision pipeline integrating YOLOv8 and OpenCV to identify real-time traffic patterns.',
+                technical: 'Architected the data ingestion layer using Python and OpenCV to capture and preprocess live video feeds at the edge. Deployed YOLOv8 for real-time vehicle detection and classification, optimizing the model inference pipeline for low-latency edge hardware. Integrated a FastAPI microservices backend to expose detection results and traffic metrics.',
+                achievements: 'Optimized model and pipeline to achieve a 98% object detection accuracy rate. Designed the full data ingestion architecture enabling real-time processing on edge-deployed hardware without relying on cloud compute for inference.',
+                tags: ['YOLOv8', 'OpenCV', 'Python', 'Computer Vision', 'Data Ingestion', 'Edge Deployment'],
+                github: '',
+            },
             'project-inventory': {
                 title: 'Inventory-Management-Service',
                 icon: '📦',
@@ -2511,7 +2528,7 @@
 
                 paper: ''
             },
-            
+
             'project-portfolio': {
                 title: 'Dr. Mohit Rathore - Professional Portfolio',
                 icon: '⚕️',
@@ -2524,7 +2541,7 @@
                 demo: 'https://portfolio-doctor-mohit-rathore.vercel.app/',
                 paper: ''
             },
-                      'project-hybrid-quantum-portfolio-optimizer': {
+            'project-hybrid-quantum-portfolio-optimizer': {
                 title: 'The Hybrid Quantum Portfolio Optimizer',
                 icon: '📈',
                 image: 'images/quantum-portfolio-optimizer.png',
